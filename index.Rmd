@@ -23,7 +23,7 @@ shp = readOGR(dsn="C:\\MASTER RAD\\FINALNO\\R\\GIT\\Pusumljeno_podrucje\\PODACI"
 <!-- kreiranje mapa posumljenih povrsina -->
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
-mapS2012 <- mapview(shp, zcol = "X._S2012", 
+mapS2012 <- mapview(shp, zcol = "X._S2012", label = "NameASCII",
                    map.types =c('CartoDB.Positron','Esri.WorldImagery','OpenStreetMap'),
                    col.regions = RColorBrewer::brewer.pal(9, "Greens"), alpha.regions = 1,
                    layer.name = "Pošumljenost 2012",
@@ -38,7 +38,7 @@ mapS2012 <- mapview(shp, zcol = "X._S2012",
                     )
                   )
 
-mapS2015 <- mapview(shp, zcol = "X._S2015",
+mapS2015 <- mapview(shp, zcol = "X._S2015", label = "NameASCII",
                    map.types =c('CartoDB.Positron','Esri.WorldImagery','OpenStreetMap'),
                    col.regions = RColorBrewer::brewer.pal(9, "Greens"), alpha.regions = 1,
                    layer.name = "Pošumljenost 2015",
@@ -53,7 +53,7 @@ mapS2015 <- mapview(shp, zcol = "X._S2015",
                     )
                   )
 
-mapS2018 <- mapview(shp, zcol = "X._S2018",
+mapS2018 <- mapview(shp, zcol = "X._S2018", label = "NameASCII",
                    map.types =c('CartoDB.Positron','Esri.WorldImagery','OpenStreetMap'),
                    col.regions = RColorBrewer::brewer.pal(9, "Greens"), alpha.regions = 1,
                    layer.name = "Pošumljenost 2018",
