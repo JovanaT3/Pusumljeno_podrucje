@@ -71,31 +71,32 @@ mapS2018 <- mapview(shp, zcol = "X._S2018", label = "NameASCII",
 
 <!-- PRVI DIO -->
 
-## [*Karte pošumljenih površina opština u Srbiji za godine 2012, 2015 i 2018*]{.underline}
+## [*Karte pošumljenih površina opština u Srbiji za godine 2012, 2015 i 2018*]{.underline} {style="font-family:Arial"}
 
-<p style="text-align:justify">Karte pošumljenih površina opština u Srbiji dobijene su na osnovu podataka [Kopernikus monitoring servisa](https://land.copernicus.eu/en/map-viewer). Dobijene karte predstavljaju procentualni odnos površina pošumljenog područja i površine opština.</p>
+<p style="text-align:justify;font-family:Arial">Karte pošumljenih površina opština u Srbiji dobijene su na osnovu [*TCD*](https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density) mapa, preuzetih sa [*Kopernikus Land monitoring servisa*](https://land.copernicus.eu/en/map-viewer). Dobijene karte predstavljaju procentualni odnos površina pošumljenog područja i površine opština.</p>
 
 \n
 
-### Izaberi kartu pošumljenonosti:{.tabset}
+### [Izaberi kartu pošumljenonosti:]{style="font-family:Arial"} {.tabset}
 
-#### Pošumljenost za 2012-u
+#### [Pošumljenost za 2012-u]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapS2012
 ```
 
-#### Pošumljenost za 2015-u
+#### [Pošumljenost za 2015-u]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapS2015
 ```
 
-#### Pošumljenost za 2018-u
+#### [Pošumljenost za 2018-u]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapS2018
 ```
+
 \n
 
 <!-- kreiranje mapa promena -->
@@ -162,15 +163,15 @@ mapPR_S_12_18 <- mapview(shp, zcol = "PR_S_12_18", label = "NameASCII",
 \
 <!-- DRUGI DIO  -->
 
-# [*Karte promena pošumljenih površina opština u Srbiji*]{.underline}
+# [[*Karte promena pošumljenih površina opština u Srbiji*]{.underline}]{style="font-family:Arial"}
 
-<p style="text-align:justify">Karte promena predstavljaju koliko puta se promenilo pošumljeno područje po opštini u zavisnosti od datih godina, odnosno koliko puta se površina pošumljenog područja jedne opštine povećala (vrednosti\>1) ili smanjila (vrednosti\<1) za određeni period. Vizuelnom poređenju karata možete pristupiti [ovde](https://jovanat3.github.io/Posumljenost_poredjene/).</p>
+<p style="text-align:justify;font-family:Arial">Karte promena predstavljaju koliko puta se promenilo pošumljeno područje po opštini u zavisnosti od datih godina, odnosno koliko puta se površina pošumljenog područja jedne opštine povećala (vrednosti\>1) ili smanjila (vrednosti\<1) za određeni period. Vizuelnom poređenju karata možete pristupiti [ovde](https://jovanat3.github.io/Posumljenost_poredjene/).</p>
 
 \n
 
-### Izaberi kartu promene:{.tabset}
+### [Izaberi kartu promene:]{style="font-family:Arial"} {.tabset}
 
-#### Karta promena 2012/2015
+#### [Karta promena 2012/2015]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapPR_S_12_15
@@ -178,7 +179,7 @@ mapPR_S_12_15
 
 \n
 
-#### Karta promena 2015/2018
+#### [Karta promena 2015/2018]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapPR_S_15_18 
@@ -186,11 +187,9 @@ mapPR_S_15_18
 
 \n
 
-#### Karta promena 2012/2018
+#### [Karta promena 2012/2018]{style="font-family:Arial"}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 mapPR_S_12_18
 ```
-
-\n
 
